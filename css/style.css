@@ -54,6 +54,10 @@ main {
 .form-content ul li + li {
     margin-top: 20px;
 }
+.form-content li label em {
+    margin-left: .2em;
+    color: #ff2121;
+}
 .form-content input,
 .form-content textarea {
     width: 100%;
@@ -89,6 +93,10 @@ main {
 .thanks {
     font-size: 14px;
     line-height: 1.6em;
+}
+.thanks span {
+    font-weight: bold;
+    color: #333;
 }
 .back-top {
     margin-top: 30px;

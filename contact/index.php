@@ -10,13 +10,13 @@
 				<ul>
 					<li>
 						<label for="name">
-							名前<br>
+							名前<em>*</em><br>
 							<input type="text" name="name" id="name" />
 						</label>
 					</li>
 					<li>
 						<label for="email">
-							メールアドレス<br>
+							メールアドレス<em>*</em><br>
 							<input type="mail" name="email" id="email" />
 						</label>
 					</li>
