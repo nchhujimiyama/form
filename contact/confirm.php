@@ -5,7 +5,7 @@
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/template/header.php'); ?>
 	<main>
         <section class="form-content">
-            <form action="./submit.php" method="post">
+            <form action="./submit.php" method="post" id="form">
                 <h2>お問い合わせ内容の確認</h2>
                 <ul>
                     <li>
@@ -25,6 +25,7 @@
                 <input type="hidden" name="email" value="<?php echo $_POST['email'];?>" />
                 <input type="hidden" name="inquiry_content" value="<?php echo $_POST['inquiry_content'];?>" />
                 <input type="submit" name="form_post" id="form_post" value="送信する" />
+                <a href="javascript:void(0)" class="back">修正する</a>
             </form>
         </section>
 	</main>
