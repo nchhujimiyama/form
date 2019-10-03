@@ -1,3 +1,6 @@
+<?php
+$name = (!empty($_POST['name'])) ? $_POST['name'] : '';
+?>
 <!DOCTYPE html>
 <html>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/template/head.php'); ?>
@@ -6,12 +9,13 @@
 	<main>
 		<section class="form-content">
 			<h2>お問い合わせ</h2>
-			<form action="./confirm.php" method="post">
+			<form action="./confirm.php" method="post" class="contact-form">
+				<div class="feedback"></div>
 				<ul>
 					<li>
 						<label for="name">
 							名前<em>*</em><br>
-							<input type="text" name="name" id="name" />
+							<input type="text" name="name" id="name" value="<?php echo $name; ?>" />
 						</label>
 					</li>
 					<li>
