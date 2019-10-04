@@ -87,6 +87,42 @@ main {
     border: none;
     color: #fff;
     font-size: 14px;
+    cursor: pointer;
+}
+.form-content .submit-group {
+    display: flex;
+    margin: 30px auto 0;
+}
+.form-content .submit-group #form_post {
+    flex: 1;
+    max-width: none;
+    margin: 0 auto;
+}
+.form-content .submit-group a {
+    flex: 1;
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+    padding: 8px;
+    border: 2px solid #888;
+    border-radius: 3px;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* バリデーション */
+.feedback {
+    display: none;
+    color: #666;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.feedback.active {
+    display: block;
 }
 
 

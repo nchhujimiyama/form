@@ -24,8 +24,10 @@
                 <input type="hidden" name="name" value="<?php echo $_POST['name'];?>" />
                 <input type="hidden" name="email" value="<?php echo $_POST['email'];?>" />
                 <input type="hidden" name="inquiry_content" value="<?php echo $_POST['inquiry_content'];?>" />
-                <input type="submit" name="form_post" id="form_post" value="送信する" />
-                <a href="javascript:void(0)" class="back">修正する</a>
+                <div class="submit-group">
+                    <a href="javascript:void(0)" class="back">修正する</a>
+                    <input type="submit" name="form_post" id="form_post" value="送信する" />
+                </div>
             </form>
         </section>
 	</main>
