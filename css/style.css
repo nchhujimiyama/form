@@ -94,9 +94,13 @@ main {
     font-size: 14px;
     line-height: 1.6em;
 }
-.thanks span {
+.thanks .email {
     font-weight: bold;
     color: #333;
+}
+.thanks b {
+    font-weight: bold;
+    text-decoration: underline;
 }
 .back-top {
     margin-top: 30px;
