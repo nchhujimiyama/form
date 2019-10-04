@@ -10,18 +10,19 @@ $name = (!empty($_POST['name'])) ? $_POST['name'] : '';
 		<section class="form-content">
 			<h2>お問い合わせ</h2>
 			<form action="./confirm.php" method="post" class="contact-form">
-				<div class="feedback"></div>
 				<ul>
 					<li>
 						<label for="name">
-							名前<em>*</em><br>
+							名前<em>*</em>
 							<input type="text" name="name" id="name" value="<?php echo $name; ?>" />
+							<p class="feedback name">名前を入力してください。</p>
 						</label>
 					</li>
 					<li>
 						<label for="email">
-							メールアドレス<em>*</em><br>
+							メールアドレス<em>*</em>
 							<input type="mail" name="email" id="email" />
+							<p class="feedback email">有効なメールアドレスを入力してください。</p>
 						</label>
 					</li>
 					<li>

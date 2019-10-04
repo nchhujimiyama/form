@@ -2,7 +2,8 @@
  * VALIDATION
  */
 const form = document.querySelector('.contact-form');
-const feedback = document.querySelector('.feedback');
+const feedbackName = document.querySelector('.feedback.name');
+const feedbackEmail = document.querySelector('.feedback.email');
 
 const emailPattern = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -12,14 +13,29 @@ form.addEventListener('submit', e => {
     const name = form.name.value;
     const mail = form.email.value;
 
+    let isError = false;
+
     if(!name) {
-        alert('名前を入力してください');
-        return false;
+        feedbackName.classList.add('active');
+        isError = true;
     }
     if(!emailPattern.test(mail)) {
-        alert('有効なメールアドレスを入力してください');
-        return false;
+        feedbackEmail.classList.add('active');
+        isError = true;
     }
 
+    if(isError) return false;
+
     form.submit();
+});
+
+form.name.addEventListener('keyup' , e => {
+    if(e.target.value) {
+        feedbackName.classList.remove('active');
+    }
+});
+form.email.addEventListener('keyup' , e => {
+    if(emailPattern.test(e.target.value)) {
+        feedbackEmail.classList.remove('active');
+    }
 });
