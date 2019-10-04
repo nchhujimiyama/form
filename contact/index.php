@@ -35,6 +35,9 @@ $name = (!empty($_POST['name'])) ? $_POST['name'] : '';
 			</form>
 		</section>
 	</main>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/template/footer.php'); ?>
+	<?php
+	$pageType = 'contact-index';
+	include($_SERVER['DOCUMENT_ROOT'] . '/template/footer.php');
+	?>
 </body>
 </html>
