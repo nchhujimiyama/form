@@ -29,6 +29,8 @@
             </form>
         </section>
 	</main>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/template/footer.php'); ?>
+    <?php
+    $pageType = 'contact-confirm';
+    include($_SERVER['DOCUMENT_ROOT'] . '/template/footer.php'); ?>
 </body>
 </html>
